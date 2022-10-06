@@ -1,0 +1,109 @@
+.about-page__main {
+  width: 56.5%;
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+.main .scrollmagic-pin-spacer {
+  width: 12.3% !important;
+}
+
+.about-sidebar {
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 !important;
+}
+
+.sidebar-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 43vh;
+  padding-bottom: 2.6rem;
+  padding-left: 42px;
+}
+
+
+
+.about-page__heading {
+  top: -155px;
+  left: -22px;
+}
+
+.about-page__cta {
+  width: 42%;
+  padding-right: 15rem;
+}
+
+.about-page__text {
+  margin-bottom: 10.3rem;
+}
+
+.about-page__info {
+  margin-bottom: 1.6rem;
+  font-size: 20px;
+  font-family: $montserratSemiBold;
+  line-height: 150%;
+}
+
+.info-list__item {
+  margin-bottom: 1px;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.about-about {
+  padding-top: 80px;
+  padding-bottom: 180px;
+}
+
+.about-map {
+  width: 100%;
+  height: 680px;
+}
+
+.baloon__image {
+  overflow: hidden;
+  width: 100%;
+  height: 198px;
+}
+
+#map .ymaps-2-1-79-balloon__content {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+}
+
+#map .ymaps-2-1-79-balloon__content ymaps {
+  width: 100%;
+}
+
+#map .ymaps-2-1-79-balloon__close-button {
+  opacity: 1;
+}
+
+.baloon__box {
+  box-sizing: border-box;
+  width: 240px;
+  padding: 10px;
+}
+
+.baloon__heading {
+  margin-bottom: .6rem;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.baloon__text {
+  margin-bottom: 1rem;
+  font-size: 12px;
+  font-family: $montserratBold;
+  line-height: 140%;
+}
+
+.about-page__contact {
+  padding-top: 180px;
+  padding-bottom: 174px;
+}
+

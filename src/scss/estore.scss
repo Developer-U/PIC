@@ -1,0 +1,169 @@
+.woocommerce-product-gallery {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 2rem;
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  .woocommerce-product-gallery__wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .zoomImg {
+    opacity: 0;
+    background-color: #fff;
+  }
+
+  .woocommerce-product-gallery__image--placeholder {
+    border: 1px solid #f2f2f2;
+  }
+
+  .woocommerce-product-gallery__image:nth-child(n+2) {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .flex-control-thumbs {
+    li {
+      float: left;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      opacity: .5;
+
+      &:hover , &.flex-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    height: auto;
+  }
+}
+
+.woocommerce-product-gallery--columns-3 {
+  .flex-control-thumbs li {
+    width: 33.3333%;
+  }
+
+  .flex-control-thumbs li:nth-child(3n+1) {
+    clear: left;
+  }
+}
+
+.woocommerce-product-gallery--columns-4 {
+  ol {
+    width: 85%;
+    height: 80px;
+    margin: 2rem auto 0 auto;
+  }
+
+  .flex-control-thumbs li {
+    overflow: hidden;
+    width: 20%;
+    height: 100%;
+    margin: 0 5% 1rem 0;
+  }
+
+  .flex-control-thumbs li:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .flex-control-thumbs li:nth-child(4n+1) {
+    clear: left;
+  }
+}
+
+.woocommerce-product-gallery--columns-5 {
+  .flex-control-thumbs li {
+    width: 20%;
+  }
+
+  .flex-control-thumbs li:nth-child(5n+1) {
+    clear: left;
+  }
+}
+
+.woocommerce-product-gallery__trigger {
+  position: absolute;
+  z-index: 99;
+  top: 1rem;
+  right: 1rem;
+}
+
+.woocommerce-breadcrumb {
+  margin-bottom: 2.5rem;
+  padding: 0 12px;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.potolok__box .product {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+// Карточка товара
+
+.product_title {
+  margin-bottom: 1.4rem;
+  font-size: 32px;
+  line-height: 150%;
+  text-transform: none;
+}
+
+.woocommerce-product-details__short-description p {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.woocommerce-product-details__short-description h2 {
+  margin-bottom: 1.8rem;
+  font-size: 16px;
+  font-family: $montserratBold;
+  line-height: 140%;
+}
+
+.woocommerce-product-details__short-description ul {
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.woocommerce-product-details__short-description ul li {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.price .woocommerce-Price-amount {
+  margin-bottom: 1.6rem;
+  font-size: 32px;
+  font-family: $montserratMedium;
+  line-height: 150%;
+}
+
+.single_add_to_cart_button {
+  width: 208px;
+  min-height: 60px;
+  margin-top: 1.7rem;
+
+@include orangeBtn();
+}
+
+.flex-viewport {
+  height: 457px !important;
+}

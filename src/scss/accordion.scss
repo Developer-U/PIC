@@ -1,0 +1,113 @@
+/*Accordion / Аккордеон*/
+
+
+
+// #accordion.ui-accordion .ui-accordion-header:first-child , #accordion2.ui-accordion .ui-accordion-header:first-child {
+//   padding-top: 68px;
+// }
+
+.ui-accordion .ui-accordion-header {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 28px 56px 28px 0;
+  border: none;
+  font-size: 16px;
+  line-height: 140%;
+  background: transparent;
+}
+
+.ui-accordion .ui-accordion-content {
+  margin-bottom: 1.5rem;
+  padding: 0 42px 24px 0 !important;
+  border: none;
+  border-bottom: 1px solid #cbcbcb;
+  font-size: 14px;
+  font-family: $montserratMedium;
+  line-height: 140%;
+}
+
+#accordion4 .ui-accordion-content , #accordion5 .ui-accordion-content , #accordion6 .ui-accordion-content , #accordion7 .ui-accordion-content {
+  padding: 0 0 24px 0 !important;
+}
+
+
+#accordion .ui-icon-triangle-1-e , #accordion2 .ui-icon-triangle-1-e , #accordion3 .ui-icon-triangle-1-e , #accordion4 .ui-icon-triangle-1-e , #accordion5 .ui-icon-triangle-1-e , #accordion6 .ui-icon-triangle-1-e , #accordion7 .ui-icon-triangle-1-e {
+  position: absolute;
+  z-index: 3;
+  top: 26%;
+  right: -20px;
+  width: 30px;
+  height: 30px;
+  opacity: .5;
+  background: url("../images/accordion-down.svg") no-repeat center right/contain;
+          transition: -webkit-transform .8s linear;
+          transition:         transform .8s linear;
+          transition:         transform .8s linear, -webkit-transform .8s linear;
+  cursor: pointer;
+
+  -webkit-transition: -webkit-transform .8s linear;
+       -o-transition:         transform .8s linear;
+}
+
+.ui-state-active {
+  font-family: $montserratSemiBold;
+}
+
+#accordion .ui-icon-triangle-1-e:hover , .ui-icon-triangle-1-e:focus , #accordion2 .ui-icon-triangle-1-e:hover , .ui-icon-triangle-1-e:focus , #accordion3 .ui-icon-triangle-1-e:hover , .ui-icon-triangle-1-e:focus , #accordion4 .ui-icon-triangle-1-e:hover , .ui-icon-triangle-1-e:focus , #accordion5 .ui-icon-triangle-1-e:hover , .ui-icon-triangle-1-e:focus , #accordion6 .ui-icon-triangle-1-e:hover , .ui-icon-triangle-1-e:focus , #accordion7 .ui-icon-triangle-1-e:hover , .ui-icon-triangle-1-e:focus {
+  opacity: .5;
+          transition: opacity .5s linear;
+
+  -webkit-transition: opacity .5s linear;
+       -o-transition: opacity .5s linear;
+}
+
+#accordion .ui-state-active .ui-icon , #accordion2 .ui-state-active .ui-icon , #accordion3 .ui-state-active .ui-icon , #accordion4 .ui-state-active .ui-icon , #accordion5 .ui-state-active .ui-icon , #accordion6 .ui-state-active .ui-icon , #accordion7 .ui-state-active .ui-icon {
+  position: absolute;
+  z-index: 3;
+  top: 26%;
+  right: -20px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/accordion-down.svg") no-repeat center right/contain;
+          transform: rotate(180deg);
+          transition: -webkit-transform .5s linear;
+          transition:         transform .5s linear;
+          transition:         transform .5s linear, -webkit-transform .5s linear;
+
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .5s linear;
+       -o-transition:         transform .5s linear;
+}
+
+#accordion4 .ui-accordion-header , #accordion5 .ui-accordion-header , #accordion6 .ui-accordion-header , #accordion7 .ui-accordion-header {
+  display: flex;
+  padding: .6rem 0;
+}
+
+.ui-state-active , .ui-accordion .ui-accordion-header-active , .ui-accordion .ui-accordion-header-active:hover {
+  border-bottom: none;
+}
+
+.ui-accordion-header-active {
+  font-family: $montserratSemiBold;
+}
+
+.ui-accordion .ui-accordion-header-active , .ui-accordion .ui-accordion-header-active:hover , .ui-state-active {
+  border-bottom: none;
+  color: $black;
+}
+
+#accordion .accordion-item , #accordion6 .accordion-item , #accordion7 .accordion-item {
+  width: 46%;
+}
+
+.ui-accordion .ui-accordion-header {
+  padding: .5em .5em .5em 0 !important;
+}
+
+
+

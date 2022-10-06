@@ -1,0 +1,92 @@
+.blog__item {
+  width: 78%;
+
+  &_bottom {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.blog__video {
+  width: 100%;
+}
+
+.blog__text.text-top {
+  margin-top: 1rem;
+}
+
+.blog__second {
+  margin-top: -14.6rem;
+}
+
+.blog__contain {
+  width: 100%;
+  margin: 0;
+}
+
+.blog-main__item {
+  margin-bottom: 1.5rem;
+}
+
+.blog__heading {
+  margin-bottom: 4rem;
+}
+
+.blog-main__heading {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.blog-main__left {
+  margin-right: 8rem;
+}
+
+
+// Класс для открытия и скрытия отдельных публикаций
+
+.article-none {
+  display: none;
+}
+
+.tabs-link-active {
+  display: block;
+}
+
+.reviews-list__review .reviews-list__video {
+  height: 298px;
+}
+
+.reviews-list__review[data-echo="малая слева"] {
+  width: 41.6%;
+  margin-bottom: 2.5rem;
+  padding-right: 9%;
+}
+
+.reviews-list__review[data-echo="большая справа"] {
+  width: 58%;
+  margin-bottom: .6rem;
+
+  & .reviews-list__video {
+    height: 537px;
+  }
+}
+
+.reviews-list__review[data-echo="малая слева нижняя"] {
+  width: 41.6%;
+  margin-bottom: 0;
+  padding-left: 9%;
+}
+
+.reviews-list__review[data-echo="малая справа нижняя"] {
+  width: 41.6%;
+  margin-top: 2.4rem;
+  margin-bottom: 2.5rem;
+  padding-right: 9%;
+}
+
+.blog-main__left p {
+  margin-bottom: 1.2rem;
+}
+
+
+
+

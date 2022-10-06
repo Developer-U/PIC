@@ -1,0 +1,650 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+html {
+          box-sizing: border-box;
+
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: $montserratRegular;
+  line-height: 20px;
+  color: $black;
+  background-color: $white;
+}
+
+.closed {
+  overflow-y: hidden;
+  height: 100vh;
+  padding-right: 15px;
+}
+
+* , *::after , *::before {
+          box-sizing: inherit;
+
+  -webkit-box-sizing: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  background-color: initial;
+  outline: none;
+  cursor: pointer;
+}
+
+input , textarea {
+  border: none;
+}
+
+p , h1 , h2 , h3 , h4 , figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
+
+
+
+h1 {
+  font-size: 100px;
+  font-family: $montserratRegular;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+h2 {
+  font-size: 56px;
+  font-family: $montserratRegular;
+  line-height: 78px;
+  color: $black;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: $montserratRegular;
+  line-height: 48px;
+  color: $black;
+}
+
+p {
+  font-size: 14px;
+  font-family: $montserratRegular;
+  line-height: 20px;
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  transition: color .3s ease-in-out;
+
+  &:hover , &:focus , &:active {
+    color: $orange;
+    transition: color .3s ease-in-out;
+  }
+}
+
+a:focus , button:focus , input:focus , a:active , button:active , input:active , textarea:focus , textarea:active {
+  outline: .5px solid $grey;
+  outline-offset: 2px;
+}
+
+img {
+  min-width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.container-fluid {
+  max-width: 1870px;
+  margin: $centered;
+}
+
+.container-fluid2 {
+  max-width: 100%;
+  margin: $centered;
+  padding: 0;
+}
+
+.container {
+  max-width: 1430px;
+}
+
+
+/*Simplebar*/
+
+.simplebar-track.simplebar-vertical {
+  width: 3px;
+  background-color: rgba(0,0,0,.25);
+}
+
+.simplebar-scrollbar {
+  z-index: 60;
+  width: 10px;
+  background: #3d3d3d;
+  cursor: pointer;
+}
+
+.simplebar-track.simplebar-horizontal {
+  height: 8px;
+  background: $grey;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar , .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  background: $orange;
+  cursor: pointer;
+}
+
+
+/*Swiper*/
+
+.swiper-pagination {
+  bottom: 9px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $orange;
+}
+
+
+/*Кастомизация radio-button*/
+
+.calc__form input[type=radio] {
+  display: none;
+}
+
+.calc__boxes label {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: .8rem;
+  padding-left: 25px;
+  font-size: 12px;
+  line-height: 17px;
+  line-height: 18px;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $black;
+    border-radius: 9px;
+  }
+}
+
+/* Checked */
+.calc__form input[type=radio]:checked + label::before {
+  background: url("../images/check.svg") no-repeat center/8px 8px;
+}
+
+
+// Breadcrumbs
+
+.hero-breadcrumbs {
+  width: 12.5%;
+}
+
+.breadcrumbs {
+  margin-bottom: 3.4rem;
+
+  &__link {
+    margin-right: 1rem;
+    font-size: 12px;
+    font-family: $montserratMedium;
+    line-height: 140%;
+
+    &::after {
+      content: ">";
+      display: inline-block;
+      position: relative;
+      right: -20px;
+      font-size: 16px;
+      line-height: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 140%;
+    color: lighten($black, 40);
+  }
+}
+
+.pages-heading {
+  margin-bottom: 2rem;
+  font-size: 48px;
+  line-height: 140%;
+  text-transform: none;
+}
+
+.visually-hidden {
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+
+/*Контейнер Смотрите также Look-more*/
+
+.look-more {
+  padding-top: 3rem;
+
+  &__heading {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    font-family: $montserratBold;
+    line-height: 140%;
+  }
+}
+
+#article-menu li {
+  width: fit-content;
+  margin-right: .3rem;
+  margin-bottom: .5rem;
+}
+
+#article-menu li a {
+  font-size: 16px;
+  font-family: $montserratMedium;
+  line-height: 140%;
+}
+
+// Чтобы был открытым первый Таб
+
+.prices-article:first-of-type , .solutions__art:first-of-type {
+  display: flex;
+}
+
+
+
+// Стилизация вывода категорий и товаров в всплывающем меню
+
+.main-menu__contain .product-category img , .main-menu__contain .type-product a img , .main-menu__list .type-product .price , .main-menu__list .type-product .add_to_cart_button , .footer-menu__list .type-product a img , .footer-menu__list .type-product .price , .footer-menu__list .type-product .add_to_cart_button {
+  display: none !important;
+}
+
+.main-menu__contain .woocommerce-loop-category__title {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-family: $montserratBold;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-menu__contain .woocommerce-loop-category__title mark {
+  background-color: transparent;
+}
+
+.footer-menu__list .type-product .woocommerce-loop-product__title {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-menu__list .type-product {
+  margin-bottom: 0 !important;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.main .scrollmagic-pin-spacer {
+  padding: 0;
+}
+
+
+/*------формы-Contact form 7-------*/
+
+
+
+/*Окно спасибо*/
+
+.popup-thanks {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255, .85);
+
+  &__contain {
+    width: 560px;
+    padding: 3rem 2rem 2.3rem;
+    border: 1px solid rgba(0,0,0,.3);
+    text-align: center;
+    background-color: $white;
+    border-radius: 10px;
+  }
+}
+
+.thanks-active {
+  display: flex;
+}
+
+.wpcf7-response-output {
+  display: none;
+}
+
+.zamer-box {
+  margin-top: 6px;
+  margin-bottom: -32px;
+}
+
+.zamer-box-left , .zamer-box-right {
+  text-align: left;
+}
+
+.zamer-box-left {
+  width: 45%;
+  padding-right: 0;
+}
+
+.zamer-box-right {
+  width: 54%;
+  padding-left: 0;
+}
+
+.zamer-box-left label , .zamer-box-right label {
+  width: 40%;
+}
+
+
+/*----Woocommerce----*/
+
+/*-----Pagination/Пагинация-----*/
+
+.wp-pagenavi {
+  margin-bottom: 80px;
+}
+
+.wp-pagenavi span.current {
+  font-family: $montserratBold;
+}
+
+.wp-pagenavi a:hover , .wp-pagenavi span.current {
+  border-color: $orange;
+}
+
+// Стили, чтобы убрать в выводе товаров в футере картинки и описание
+
+.footer-menu__list .catalog-list__item .catalog-list__image , .footer-menu__list .catalog-list__item .catalog-list__box p , .footer-menu__list .catalog-list__item p , .main-menu__contain .catalog-list__item .catalog-list__image , .main-menu__contain .catalog-list__item .catalog-list__box p , .main-menu__contain .catalog-list__item p {
+  display: none;
+}
+
+.footer-menu__list .catalog-list__item .catalog-list__heading , .main-menu__contain .catalog-list__item .catalog-list__heading {
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-family: $montserratLight;
+  line-height: 140%;
+}
+
+.main-content .footer .about__contain {
+  width: 100%;
+}
+
+// .scrollmagic-pin-spacer {
+//   width: 12.3%;
+// }
+
+.reviews-list__video iframe , .reviews-list__video_wide iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.margin-top {
+  margin-top: 110px;
+}
+
+.margin-bottom {
+  margin-bottom: 110px;
+}
+
+
+// Стилизация поля input file
+
+.field__wrapper {
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.field__file , .field__wrapper .wpcf7-form-control-wrap {
+  // visibility: hidden;
+  position: absolute;
+  left: 0;
+  height: 60px;
+  opacity: 0;
+}
+
+.wpcf7 input[type="file"] {
+  height: 60px;
+}
+
+.field__file-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
+}
+
+.field__file-fake {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  padding: 0 20px;
+  border: none;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.field__file-fake-get {
+  font-family: $montserratBold;
+  color: $orange;
+}
+
+.field__file-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  border: 1px dashed $black;
+  font-size: 14px;
+  line-height: 140%;
+  color: $black;
+  background: transparent;
+  cursor: pointer;
+
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+}
+
+.field__file-button-get {
+  border-color: lighten($black, 40%);
+  color: lighten($black, 40%);
+}
+
+
+/*----Стили страницы результатов поиска Search----*/
+
+.search-article {
+  margin-bottom: 2rem;
+  padding-right: 6%;
+
+  &__image {
+    overflow: hidden;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 1rem;
+
+    & a {
+      display: block;
+      height: 100%;
+    }
+
+    & a img {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+}
+
+
+/*Login*/
+
+.login-btn {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  &__img {
+    width: 18px;
+    height: 100%;
+    transition: fill .3s ease-in-out;
+
+    fill: $black;
+
+    &:hover , &:focus , &:active {
+      transition: fill .3s ease-in-out;
+
+      fill: $orange;
+    }
+  }
+
+  &__contain {
+    width: 760px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+
+  &__close {
+    display: block;
+    width: 24px;
+    height: 100%;
+    margin: 0 0 40px auto;
+  }
+
+  &__contain .simplebar-vertical {
+    background-color: transparent;
+  }
+
+  &__contain .simplebar-vertical .simplebar-scrollbar {
+    left: auto;
+    width: 5px;
+    background: $orange;
+    border-radius: 2.5px;
+  }
+}
+
+.login-btn__contain form p {
+  text-align: left;
+}
+
+.login-form {
+  text-align: center;
+
+  &__form {
+    margin-bottom: 3rem;
+  }
+}
+
+.login-form .woocommerce-privacy-policy-text {
+  margin: 1rem 0;
+}
+
+
+
+
+/*----Редактор wordpress----*/
+
+.post p {
+  margin-bottom: 1rem;
+}
+
+.post ul {
+  padding-left: 21px;
+  list-style-type: disc;
+}
+
+.post ul li , .post ol li {
+  margin-bottom: 1rem;
+  font-family: $montserratMedium;
+}
+
+.post figure {
+  width: 70%;
+  margin-bottom: 1.6rem;
+}
+
+.post h2 {
+  margin-bottom: 1.6rem;
+}
+
+.post h3 {
+  margin-bottom: 1rem;
+}
+
+.catalog__article + .products .product-category {
+  display: none !important;
+}

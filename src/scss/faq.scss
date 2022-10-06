@@ -1,0 +1,49 @@
+.faq-page__main {
+  padding-right: 0;
+  padding-left: 0;
+  background: none;
+}
+
+.faq-page__accord {
+  width: 79%;
+}
+
+.faq-sidebar {
+  width: 11.8%;
+}
+
+.faq-cta {
+  width: 42%;
+  padding-top: 8rem;
+  padding-right: 23rem;
+  text-align: center;
+
+  &__heading {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-family: $montserratBold;
+    line-height: 140%;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+  }
+}
+
+.hero-cta__input_textarea {
+  max-width: 100%;
+  height: 168px;
+  margin-bottom: 1.3rem;
+  padding: 13px 18px;
+  text-align: left;
+}
+
+.hero-cta__input_file {
+  margin-bottom: 1.3rem;
+  border-style: dashed;
+}
+
+.faq-contact {
+  padding-top: 158px;
+}
+

@@ -1,0 +1,70 @@
+.contacts {
+  padding-bottom: 0;
+  border: none;
+
+  &__contact {
+    padding-top: 115px;
+  }
+
+  &__heading {
+    margin-bottom: 2.5rem;
+  }
+
+  &__subheading {
+    margin-bottom: 2.6rem;
+    padding-right: 7rem;
+  }
+
+  &__left {
+    margin-right: 1rem;
+    padding-left: 0;
+  }
+
+  &__right {
+    padding-top: 5rem;
+  }
+
+  &__social {
+    width: 70px;
+  }
+}
+
+.contacts-list {
+  margin-top: 60px;
+}
+
+.contacts-list__heading {
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  font-family: $montserratSemiBold;
+  line-height: 150%;
+}
+
+.contacts-list__heading_right {
+  margin-bottom: 2rem;
+}
+
+.contacts-list__link {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.contacts-list__item {
+  margin-bottom: 2.5rem;
+}
+
+.contacts-list__text {
+  padding-right: 1rem;
+}
+
+.contacts-list__box {
+  margin-bottom: 1.2rem;
+}
+
+.contacts-social__item , .contacts-social__img {
+  width: 24px;
+  height: 24px;
+}
+

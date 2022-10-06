@@ -1,0 +1,198 @@
+.breadcrumbs-card {
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  padding-bottom: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
+  &__heading {
+    text-transform: none;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__subheading {
+    margin-bottom: 1.8rem;
+    font-size: 16px;
+    font-family: $montserratBold;
+    line-height: 140%;
+  }
+
+  &__about {
+    padding-top: 0px;
+    padding-bottom: 169px;
+  }
+
+  &__options {
+    padding-bottom: 48px;
+  }
+}
+
+.calc__contain_card {
+  padding: 35px 73px 22px 25px;
+}
+
+.card__list {
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.card__item {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.card__price {
+  margin-bottom: 1.6rem;
+  font-size: 32px;
+  font-family: $montserratMedium;
+  line-height: 150%;
+}
+
+.card__btn {
+  width: 208px;
+  min-height: 60px;
+
+@include orangeBtn();
+}
+
+.card-slider {
+  padding-bottom: 108px;
+  padding-left: 0;
+}
+
+.card-slider .swiper-pagination {
+  bottom: 1px;
+}
+
+.card-slider .button-next-el , .card-slider .button-prev-el {
+  top: 96%;
+}
+
+.card-calc {
+  margin-bottom: 0;
+  padding-top: 0;
+
+  &__heading {
+    margin-bottom: 1.3rem;
+    font-size: 32px;
+    font-family: $montserratMedium;
+    line-height: 150%;
+  }
+
+  &__list {
+    width: 31.5%;
+    padding-top: 9px;
+    padding-right: 30px;
+    padding-left: 19px;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__image {
+    overflow: hidden;
+    width: 320px;
+    height: 320px;
+    padding-top: 6px;
+  }
+
+  &__text {
+    width: calc(100% - 400px);
+  }
+}
+
+.our-works {
+  padding-bottom: 178px;
+
+  &__contain {
+    height: 785px;
+  }
+
+  &__heading {
+    margin-bottom: 2.5rem;
+    font-size: 48px;
+    line-height: 140%;
+  }
+
+  &__one {
+    height: calc(50% - 16px);
+  }
+
+  &__one_first {
+    margin-bottom: 32px;
+  }
+
+  &__left {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 42.5%;
+    height: 100%;
+  }
+
+  &__image {
+    overflow: hidden;
+    height: 100%;
+
+    &_wide {
+      width: 100%;
+      height: calc(50% - 16px);
+    }
+
+    &_one {
+      height: calc(50% - 16px);
+      margin-bottom: 32px;
+    }
+
+    &_short {
+      width: 41.5%;
+    }
+
+    &_left {
+      margin-left: 22px;
+    }
+
+    &_right {
+      margin-right: 22px;
+    }
+  }
+
+  &__right {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 0;
+  }
+}
+
+.our-works__one {
+  height: calc(60% - 16px);
+}
+
+.our-works__one_first {
+  height: calc(40% - 16px);
+}
+
+.card__mobile {
+  display: none;
+  width: 80%;
+  margin-bottom: 1rem;
+  padding-left: 0;
+  font-size: 20px;
+  font-family: $montserratSemiBold;
+  line-height: 150%;
+  text-transform: none;
+}

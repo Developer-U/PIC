@@ -1,0 +1,28 @@
+.category {
+  margin-bottom: 0;
+
+  &__main {
+    margin-bottom: 3.3rem;
+  }
+
+  &__heading {
+    margin-bottom: 4px;
+  }
+
+  &__article {
+    margin-bottom: 0;
+    padding-bottom: 11px;
+  }
+
+  &__calc {
+    padding-top: 0;
+    padding-bottom: 166px;
+  }
+}
+
+.woocommerce-products-header .term-description {
+  width: 41%;
+  margin-bottom: 3.3rem;
+  font-size: 16px;
+  line-height: 140%;
+}

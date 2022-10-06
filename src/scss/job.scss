@@ -1,0 +1,45 @@
+.job__heading {
+  margin-bottom: 2.5rem;
+  font-size: 32px;
+  font-family: $montserratMedium;
+  line-height: 150%;
+}
+
+.job__subheading {
+  display: flex;
+}
+
+.job__full {
+  width: 93.5%;
+}
+
+.job__article {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.job__post , .job__price {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.job__post {
+  width: 56%;
+  margin-right: 6px;
+  font-size: 16px;
+  font-family: $montserratBold;
+  line-height: 140%;
+}
+
+.job__price {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.job__btn {
+  width: 180px;
+  min-height: 40px;
+  margin-top: 1rem;
+
+@include orangeBtn();
+}

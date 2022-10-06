@@ -1,0 +1,76 @@
+/*Пагинация слайдера на главной*/
+.potolok-slider .swiper-pagination {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 20;
+  bottom: 18px;
+  left: 50% !important;
+  width: 100%;
+  max-width: 597px;
+  transform: translateX(-51%) !important;
+}
+
+.potolok-slider .swiper-pagination-bullet-active {
+  border-radius: 0;
+  outline: 1px solid #000!important;
+
+  filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, .2));
+}
+
+.potolok-slider .swiper-pagination-bullet {
+  width: 20% ;
+  height: 80px;
+  min-height: 80px ;
+  opacity: 1 ;
+}
+
+
+.potolok-slider__link {
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+
+/*Navigation*/
+
+.button-next-el , .button-prev-el , .button-next-el2 , .button-prev-el2 {
+  top: 92%;
+  width: 27px;
+  height: 13px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-next-el2 , .button-prev-el2 {
+  top: 69%;
+}
+
+.button-next-el::after , .button-prev-el::after , .button-next-el2::after , .button-prev-el2::after {
+  content: "";
+}
+
+.button-prev-el , .button-prev-el2 {
+  background-image: url("../images/prev-el.svg");
+}
+
+.button-prev-el {
+  left: 0;
+}
+
+.button-prev-el2 {
+  left: 0;
+}
+
+.button-next-el , .button-next-el2 {
+  background-image: url("../images/next-el.svg");
+}
+
+.button-next-el {
+  right: 14px;
+}
+
+.button-next-el2 {
+  right: 0;
+}

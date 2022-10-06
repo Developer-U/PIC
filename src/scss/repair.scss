@@ -1,0 +1,99 @@
+
+
+.repair__resurses {
+  margin-bottom: 198px;
+  padding-top: 180px;
+}
+
+.repair__types {
+  margin-bottom: 79px;
+}
+
+.about-page__btn {
+  width: 245px;
+  min-height: 60px;
+
+@include orangeBtn();
+}
+
+.resurses__icon {
+  width: 71%;
+  height: 186px;
+  margin-bottom: 1.5rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &_first {
+    background-image: url("../images/uslugi1.svg");
+  }
+
+  &_second {
+    background-image: url("../images/uslugi2.svg");
+  }
+
+  &_third {
+    background-image: url("../images/uslugi3.svg");
+  }
+
+  &_fourth {
+    background-image: url("../images/uslugi4.svg");
+  }
+}
+
+.resurses__heading {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-family: $montserratMedium;
+  line-height: 150%;
+}
+
+.types-repair__list {
+  width: 50%;
+}
+
+.repair__text {
+  margin-bottom: 2rem;
+}
+
+.types-repair__heading {
+  padding-left: 0;
+  font-size: 32px;
+  font-family: $montserratMedium;
+  line-height: 150%;
+}
+
+.types-rapair__cont {
+  margin-bottom: 3.2rem;
+  padding-bottom: 20px;
+}
+
+.types-repair-left {
+  width: 44%;
+}
+
+.types-repair__item {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.types-repair__text {
+  font-size: 20px;
+  font-family: $montserratMedium;
+  line-height: 150%;
+}
+
+.types-repair__digit {
+  font-size: 20px;
+  font-family: $montserratBold;
+  line-height: 140%;
+}
+
+.types__options {
+  padding-bottom: 26px;
+}
+
+.repair__contact {
+  padding-top: 0px;
+  padding-bottom: 163px;
+}
