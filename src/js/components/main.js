@@ -69,20 +69,20 @@ window.addEventListener('DOMContentLoaded', function(){
 
   // Появление фильтров в разделе "Каталог" основного меню в мобильной версии
 
-  const filterList = document.querySelector('.main-menu__contain')
-  ,openFilterList = document.querySelector('.js-openFilters');
+  // const filterList = document.querySelector('.main-menu__contain')
+  // ,openFilterList = document.querySelector('.js-openFilters');
 
-  openFilterList.addEventListener('click', function(e){ 
-  e.preventDefault();     
-  filterList.classList.toggle('opened');
+  // openFilterList.addEventListener('click', function(e){ 
+  // e.preventDefault();     
+  // filterList.classList.toggle('opened');
 
-  document.querySelectorAll('.main-menu__link').forEach(function(oneLink){
-  oneLink.addEventListener('click', function(){
-      fadeOut(filterList, 300);
+  // document.querySelectorAll('.main-menu__link').forEach(function(oneLink){
+  // oneLink.addEventListener('click', function(){
+  //     fadeOut(filterList, 300);
       
-  });
-  });
-  });  
+  // });
+  // });
+  // });  
   
 
   // Скроллинг
@@ -127,22 +127,18 @@ window.addEventListener('DOMContentLoaded', function(){
 
   var tl2 = gsap.timeline({paused:true}); 
 
-  // Определим параметры анимации всплывания поля поиска в зависимости
-  // от ширины экрана устройства:
-
   // Ширина активного окна устройства:
   var availableScreenWidth = window.screen.availWidth;
 
-  if(availableScreenWidth >= '768' && availableScreenWidth < '1199') {
-    tl2.fromTo(searchField, {display: 'none', right: '-202%'}, {duration:1.2, ease: "power3.in", display: 'block', right: '80px'});
-  } else if (availableScreenWidth < '768') {    
-    tl2.fromTo(searchField, {display: 'none', right: '-202%'}, {duration:1.2, ease: "power3.in", display: 'block', right: 0});
+  if(availableScreenWidth <= '1199') {
+    tl2.fromTo(searchField, {display: 'none', transform: 'translateX(202%)'}, {duration:1.2, ease: "power3.in", display: 'block', transform: 'translateX(0)'});
   }
+ 
   searchFieldOpen.onclick = function(){
     tl2.play();
   }
 
-  document.querySelector('.search-box__close').addEventListener('click', function() {
+  document.querySelector('.js-closeSearch').addEventListener('click', function() {
     tl2.reverse();
   });
 
@@ -344,6 +340,8 @@ document.querySelectorAll('.solutions-gallery__btn').forEach(function(solBtn){
       });
   });
   });
+  
+
   
   
 

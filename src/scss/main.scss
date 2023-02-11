@@ -10,7 +10,7 @@
 }
 
 .menu-top {
-  width: 60%;
+  width: 64%;
 }
 
 .left-top {
@@ -47,7 +47,7 @@
   }
 
   &__menu {
-    padding-right: 39px;
+    padding-right: 8px;
   }
 
   &__logo {
@@ -137,7 +137,6 @@
 
 .search-to-button {
   position: relative;
-  top: 10px;
 }
 
 .menu__item , #primary-menu li {
@@ -253,31 +252,25 @@
 .hero {
   overflow: hidden;
   padding-top: 1rem;
+
+  &__cont {
+    margin: 0;
+  }
 }
 
-.hero-sidebar {
-  // flex-direction: column;
-  // min-height: 100%;
-  // margin-right: 4.6rem;
-  // padding-top: 43vh;
-  // padding-left: 42px;
+.hero-sidebar__item , #secondary-menu li {
+  margin-bottom: 2rem;
 
-
-
-  &__item , #secondary-menu li {
-    margin-bottom: 2rem;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
   }
+}
 
-  &__link , #secondary-menu li a {
-    font-size: 16px;
-    font-family: $montserratMedium;
-    line-height: 22px;
-    text-transform: uppercase;
-  }
+.hero-sidebar__link , #secondary-menu li a {
+  font-size: 16px;
+  font-family: $montserratMedium;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
 .hero-main {
@@ -389,8 +382,8 @@
   font-size: initial;
 
   &__heading {
-    padding-right: 0;
-    font-size: 16px;
+    padding-right: 8px;
+    font-size: 15px;
     font-family: $montserratSemiBold;
     line-height: 22px;
   }
@@ -571,7 +564,6 @@
 }
 
 
-
 .hero-cta__input_time {
   display: inline-block;
   position: relative;
@@ -633,23 +625,6 @@
     }
   }
 
-  &__list {
-    width: 100%;
-  }
-
-  &__item {
-    margin-bottom: 16px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__link {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
   &__one_shirt {
     width: 220px;
   }
@@ -667,6 +642,24 @@
     background: url("../images/potolok3.jpg") no-repeat center/cover;
   }
 }
+
+.main-menu #secondary-menu ul {
+  width: 100%;
+}
+
+.main-menu #secondary-menu ul li {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.main-menu #secondary-menu ul li a {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 
 .mobile-menu__link {
   display: none;
@@ -831,6 +824,12 @@
     width: 41%;
     min-height: 100%;
   }
+
+  &__big {
+    overflow: hidden;
+    width: 100%;
+    height: 560px;
+  }
 }
 
 .prices-article-active {
@@ -867,8 +866,8 @@
 /*Calc*/
 
 .calc {
-  padding-top: 180px;
-  padding-bottom: 185px;
+  padding-top: 100px;
+  padding-bottom: 135px;
 
   &__contain {
     padding: 40px 53px 22px 37px;
@@ -1268,10 +1267,10 @@ input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-
 .one-sol-more {
   // display: none;
   position: fixed;
-  z-index: 99;
+  z-index: 50;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   padding: 12vh 100px 80px;
   background-color: $white;
@@ -1287,6 +1286,8 @@ input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-
   }
 
   &__descr {
+    height: 368px;
+    margin-bottom: 2rem;
     font-size: 18px;
     line-height: 140%;
   }
@@ -1301,9 +1302,29 @@ input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-
   }
 }
 
-// .one-sol-more-active {
-//   display: block;
-// }
+.reviews-list__img {
+  width: 100%;
+  min-width: auto;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.one-sol-more__btn {
+  width: 320px;
+}
+
+.artyom-logo {
+  display: block;
+}
+
+.artyom-logo__img {
+  width: 100%;
+  min-width: auto;
+  height: auto;
+  padding-left: 6px;
+}
 
 .solutions-gallery {
   width: 100%;
@@ -1613,7 +1634,7 @@ input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-
 /*FAQ*/
 
 .faq {
-  padding-bottom: 228px;
+  padding-bottom: 128px;
 
   &__heading {
     margin-bottom: 2.6rem;
@@ -1632,11 +1653,16 @@ input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-
   }
 }
 
+// #primary .columns-3 {
+//   margin-bottom: 12rem;
+// }
+
+
 
 /*CTA*/
 
 .cta {
-  padding-bottom: 239px;
+  padding-bottom: 139px;
 
   &__contain {
     padding-top: 26px;
@@ -2026,5 +2052,18 @@ input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-
 
 ul.products li.product {
   margin-bottom: 0 !important;
+}
+
+.search-article__image img {
+  width: 100%;
+  min-width: auto;
+}
+
+.cta-box__cta .wpcf7-form p:last-of-type {
+  position: absolute;
+  bottom: 27px;
+  left: 294px;
+  width: 100%;
+  font-size: 12px;
 }
 

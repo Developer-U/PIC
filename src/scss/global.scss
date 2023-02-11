@@ -293,6 +293,18 @@ img {
 }
 
 
+// Кнопка больше отзывов/публикаций / look more
+
+.read-more-btn {
+  display: block;
+  width: 260px;
+  min-height: 50px;
+  margin: 0 auto;
+
+@include orangeBtn();
+}
+
+
 
 // Стилизация вывода категорий и товаров в всплывающем меню
 
@@ -529,6 +541,8 @@ img {
   margin-bottom: 2rem;
   padding-right: 6%;
 
+@include relative();
+
   &__image {
     overflow: hidden;
     width: 100%;
@@ -548,6 +562,24 @@ img {
       object-fit: cover;
     }
   }
+}
+
+.search-article .catalog-list__heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.uslugi-video {
+  width: 100%;
+  min-width: auto;
+  height: 100%;
+
+  object-fit: cover;
 }
 
 
@@ -619,7 +651,7 @@ img {
 /*----Редактор wordpress----*/
 
 .post p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .post ul {
@@ -639,12 +671,46 @@ img {
 
 .post h2 {
   margin-bottom: 1.6rem;
+  font-size: 32px;
+  line-height: 150%;
 }
 
 .post h3 {
   margin-bottom: 1rem;
+  font-size: 16px;
+  font-family: $montserratBold;
+  line-height: 140%;
 }
 
 .catalog__article + .products .product-category {
   display: none !important;
+}
+
+
+// Товары в категории / Category products
+
+.product-cat__list li {
+  width: 33%;
+  margin-bottom: 2rem;
+  padding-right: 2.4rem;
+}
+
+// Карточка товара 
+
+.price {
+  margin: 1.5rem auto 1.6rem 0;
+}
+
+.product-zakaz__btn {
+  width: 208px;
+  min-height: 50px;
+
+@include orangeBtn();
+}
+
+
+#breadcrumbs {
+  margin-bottom: 2.5rem;
+  font-size: 12px;
+  line-height: 140%;
 }
